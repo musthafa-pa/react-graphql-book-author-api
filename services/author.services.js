@@ -19,10 +19,12 @@ const getAuthors = async () => {
 
 const createAuthor = async (args, info) => {
   let input = args.input;
+  console.log("Input", input);
   try {
     let author = await Author.create(input);
     return author;
   } catch (error) {
+    console.log(error);
     throw Error(error);
   }
 };

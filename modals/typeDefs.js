@@ -8,7 +8,7 @@ const typeDefs = gql`
     author_country: String
     total_published_works: Int
     year_of_birth: Int
-    photo: Int
+    photo: String
     books: [Book]
   }
 
